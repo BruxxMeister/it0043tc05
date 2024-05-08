@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <center>
+    <form action="#" name="signup" method="post">
+        <label for="nationalDex">National Dex:</label>
+        <input type="text" name="" id="" placeholder="" /><br /><br />
+  
+        <input type="radio" id="generation1" name="generation" value="Generation 1">
+        <label for="generation1">Generation 1</label>
+  
+        <span class="generation-radio">
+          <input type="radio" id="generation2" name="generation" value="Generation 2">
+          <label for="generation2">Generation 2</label>
+        </span>
+  
+        <span class="generation-radio">
+          <input type="radio" id="generation3" name="generation" value="Generation 3">
+          <label for="generation3">Generation 3</label>
+        </span>
+  
+        <span class="generation-radio">
+          <input type="radio" id="generation4" name="generation" value="Generation 4">
+          <label for="generation4">Generation 4</label>
+        </span>
+  
+        <span class="generation-radio">
+          <input type="radio" id="generation5" name="generation" value="Generation 5">
+          <label for="generation5">Generation 5</label>
+        </span>
+  
+        <span class="generation-radio">
+          <input type="radio" id="generation6" name="generation" value="Generation 6">
+          <label for="generation6">Generation 6</label>
+        </span>
+  
+        <span class="generation-radio">
+          <input type="radio" id="generation7" name="generation" value="Generation 7">
+          <label for="generation7">Generation 7</label>
+        </span>
+  
+        <span class="generation-radio">
+          <input type="radio" id="generation8" name="generation" value="Generation 8">
+          <label for="generation8">Generation 8</label>
+        </span>
+  
+        <span class="generation-radio">
+          <input type="radio" id="generation9" name="generation" value="Generation 9">
+          <label for="generation9">Generation 9</label><br><br>
+        </span>
+  
+        <label for="PokemonName">Pokemon Name:</label>
+        <input type="text" name="" id="PokemonName" placeholder=""/><br>
+         
+        <label for="image">Image:</label>
+        <input type="file" id="Image" name="Image"><br>
+  
+        <span class="type-input">
+          <label for="fname">Type 1:</label>
+          <input type="text" id="Type-1" name="Type-1">
+        </span>
+  
+        <span class="type-input">
+          <label for="lname">Type 2:</label>
+          <input type="text" id="Type-2" name="Type-2">
+        </span>
+  
+      <table>
+        <tr>
+          <td>Evolves from:</td>
+          <td><input type="text" name="EvolvesFrom" value=""></td>
+          <td>Evolves to:</td>
+          <td><input type="text" name="EvolvesTo" value=""></td>
+        </tr>
+      </table>
+
+      <table>
+        <tr>
+          <td>Nickname:</td>
+          <td><input type="text" name="Nickname" value="" maxlength="10"></td>
+        </tr>
+      </table>
+    </form>
+    <form>
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday" required>
+    </form>
+    <form action="/submit" method="post">
+        <input type="submit" value="Submit">
+    </form>
+  </center>
+</body>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pokemon Table Example</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid black;
+        }
+        th {
+            background-color: #ccc;
+        }
+        .grass {
+            background-color: green;
+            color: white;
+        }
+        .fire {
+            background-color: red;
+            color: white;
+        }
+        .water {
+            background-color: blue;
+            color: white;
+        }
+        .normal {
+            background-color: beige;
+            color: black;
+        }
+        .flying {
+            background-color: skyblue;
+            color: white;
+        }
+        .poison {
+            background-color: purple;
+            color: white;
+        }
+        .ground {
+            background-color: chocolate;
+            color: white;
+        }
+        .bug {
+            background-color: lightyellow;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <thead>
+    <tr>
+        <th>National Dex</th>
+        <th>Generation</th>
+        <th>Pokemon Name</th>
+        <th>Image</th>
+        <th>Type 1</th>
+        <th>Type 2</th>
+        <th>Evolves from</th>
+        <th>Evolves to</th>
+        <th>Nickname</th>
+        <th>Birthday</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>1</td>
+        <td>Generation 1</td>
+        <td>Bulbasaur</td>
+        <td><img src="https://archives.bulbagarden.net/media/upload/thumb/f/fb/0001Bulbasaur.png/375px-0001Bulbasaur.png" alt="Bulbasaur"></td>
+        <td class="grass">Grass</td>
+        <td class="poison">Poison</td>
+        <td>None</td>
+        <td>Ivysaur</td>
+        <td>Palaka</td>
+        <td>01/01/2024</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Generation 1</td>
+        <td>Charmander</td>
+        <td><img src="https://archives.bulbagarden.net/media/upload/thumb/2/27/0004Charmander.png/375px-0004Charmander.png" alt="Charmander"></td>
+        <td class="fire">Fire</td>
+        <td>None</td>
+        <td>None</td>
+        <td>Charmeleon</td>
+        <td>Butiki</td>
+        <td>01/01/2024</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>Generation 1</td>
+        <td>Squirtle</td>   
+        <td><img src="https://archives.bulbagarden.net/media/upload/thumb/5/54/0007Squirtle.png/375px-0007Squirtle.png" alt="Squirtle"></td>
+        <td class="water">Water</td>
+        <td>None</td>
+        <td>warturtle</td>
+        <td>None</td>
+        <td>Hotdog</td>
+        <td>02/01/2024</td>
+    </tr>
+    <td>7</td>
+    <td>Generation 1</td>
+    <td>Ekans</td>   
+    <td><img src="https://archives.bulbagarden.net/media/upload/thumb/d/d2/0023Ekans.png/375px-0023Ekans.png" alt="Ekans"></td>
+    <td class="poison">poison</td>
+    <td>None</td>
+    <td>None</td>
+    <td>Arbok</td>
+    <td>Mics</td>
+    <td>07/05/2000</td>
+    <tr>
+        <td>29</td>
+        <td>Generation 1</td>
+        <td>Nidoran</td>   
+        <td><img src="https://archives.bulbagarden.net/media/upload/thumb/b/b2/0029Nidoran.png/375px-0029Nidoran.png" alt="Nidoran"></td>
+        <td class="poison">poison</td>
+        <td>None</td>
+        <td>None</td>
+        <td>Nidorina</td>
+        <td>Anya</td>
+        <td>02/04/2020</td>
+    </tr>
+    <tr>
+        <td>50</td>
+        <td>Generation 1</td>
+        <td>Diglet</td>   
+        <td><img src="https://archives.bulbagarden.net/media/upload/thumb/a/a6/0050Diglett.png/375px-0050Diglett.png" alt="Diglet"></td>
+        <td class="ground">Brown</td>
+        <td>None</td>
+        <td>None</td>
+        <td>Dugtrio</td>
+        <td>Doggie</td>
+        <td>05/04/1995</td>
+    </tr>
+    <tr>
+        <td>46</td>
+        <td>Generation 1</td>
+        <td>Paras</td>   
+        <td><img src="https://archives.bulbagarden.net/media/upload/thumb/8/8a/0046Paras.png/375px-0046Paras.png" alt="paras"></td>
+        <td class="grass">water</td>
+        <td class="bug">bug</td>
+        <td>None</td>
+        <td>None</td>
+        <td>parasect</td>
+        <td>shin</td>
+        <td>05/02/1935</td>
+    </tr>
+    <tr>
+        <td>270</td>
+        <td>Generation 3</td>
+        <td>lotad</td>   
+        <td><img src="https://archives.bulbagarden.net/media/upload/thumb/5/5f/0270Lotad.png/375px-0270Lotad.png" alt="lotad"></td>
+        <td class="water">water</td>
+        <td class="grass">bug</td>
+        <td>None</td>
+        <td>None</td>
+        <td>lombre</td>
+        <td>latom</td>  
+        <td>05/02/1966</td>
+    </tr>
+    <tr>
+        <td>278</td>
+        <td>Generation 3</td>
+        <td>wingull</td>   
+        <td><img src="https://archives.bulbagarden.net/media/upload/thumb/4/4c/0278Wingull.png/375px-0278Wingull.png" alt="wingull"></td>
+        <td class="water">water</td>
+        <td class="flying">flying</td>
+        <td>None</td>
+        <td>None</td>
+        <td>pelipper</td>
+        <td>spud</td>  
+        <td>08/02/1936</td>
+    </tr>
+    <tr>
+        <td>767</td>
+        <td>Generation 7</td>
+        <td>Wimpod</td>   
+        <td><img src="https://archives.bulbagarden.net/media/upload/thumb/0/07/0767Wimpod.png/375px-0767Wimpod.png" alt="Wimpod"></td>
+        <td class="bug">Bug</td>
+        <td class="water">water</td>
+        <td>None</td>
+        <td>None</td>
+        <td>Golisopod</td>
+        <td>sasha</td>  
+        <td>08/04/2000</td>
+    </tr>
