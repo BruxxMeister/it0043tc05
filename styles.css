@@ -1,0 +1,556 @@
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: linear-gradient(to right, #141e30, #243b55);
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #6e45e2, #88d3ce); /* Gradient background */
+    color: #f0f0f0; /* Light text color */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    overflow: auto; 
+}
+
+header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    white-space: nowrap; /* Prevent text from wrapping */
+    display: inline-block; /* Required for the scrolling effect */
+    animation: infinity 10s linear infinite; /* Apply infinity animation */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    font-family: 'Poppins', sans-serif;
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffecb3; /* Accent color for hover effect */
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+.education-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.education-logo {
+    max-width: 50px;
+    height: auto;
+    margin-left: 20px;
+}
+
+/* Section Styles */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Add subtle text shadow */
+}
+
+section p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #fff; /* White text color */
+}
+
+/* Home Section */
+#home .profile-picture img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* About Section */
+#about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#about .about-picture img {
+    border-radius: 15px;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#about div {
+    max-width: 600px;
+    margin: 0 20px;
+    color: #fff; /* White text color */
+}
+
+/* Portfolio Section */
+#portfolio .project {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#portfolio .project h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #fff; /* White text color */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Add subtle text shadow */
+}
+
+#portfolio .project p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    color: #fff; /* White text color */
+}
+
+#portfolio .project:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.3); /* Slightly darker on hover */
+}
+
+/* Education Section */
+#education .education-item {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#education .education-item h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #fff; /* White text color */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); 
+}
+
+#education .education-item p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    color: #fff; /* White text color */
+}
+
+#education .education-item:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.3); /* Slightly darker on hover */
+}
+
+/* Testimonials Section */
+#testimonials .testimonial {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#testimonials .testimonial img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#testimonials .testimonial blockquote {
+    margin: 10px 0 0 0;
+    padding: 0 20px;
+    border-left: 5px solid #fff; /* White border color */
+    color: #fff; /* White text color */
+}
+
+#testimonials .testimonial p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}
+
+#testimonials .testimonial .rating .star {
+    color: #ffc107;
+    font-size: 1.2rem;
+}
+
+#testimonials .testimonial:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.3); /* Slightly darker on hover */
+}
+
+/* Contact Section */
+#contact ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#contact ul li {
+    margin: 10px 15px;
+}
+
+#contact ul li a {
+    font-family: 'Poppins', sans-serif;
+    color: #fff; /* White text color */
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#contact ul li a:hover {
+    color: #ffecb3; /* Accent color for hover effect */
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+form label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #fff; /* White text color */
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}
+
+form button {
+    background: linear-gradient(135deg, #6e45e2, #88d3ce); /* Gradient background */
+    color: #fff; /* White text color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: linear-gradient(135deg, #88d3ce, #6e45e2); /* Reverse gradient */
+}
+
+#blog {
+    background: #f9f9f9;
+    padding: 60px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+#blog h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 2em;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #4caf50;
+    padding-bottom: 10px;
+}
+
+.blog-post {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.blog-post p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #666;
+    line-height: 1.6;
+}
+
+.read-more {
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #4caf50;
+    text-decoration: none;
+    border: 1px solid #4caf50;
+    border-radius: 5px;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.read-more:hover {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+    color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
+}
+
+#social-media {
+    margin-top: 10px;
+}
+
+#social-media a {
+    color: #f0f0f0;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#social-media a:hover {
+    color: #ffecb3; /* Accent color for hover effect */
+    transform: scale(1.2); 
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    border-radius: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #ffecb3;
+}
+
+/* Add Infinity Animation */
+@keyframes infinity {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
+}
+
+.infinity-marquee {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.infinity-marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: infinity 10s linear infinite;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('your-image.jpg') repeat;
+    z-index: -1;
+    animation: moveBackground 20s linear infinite;
+}
+
+@keyframes moveBackground {
+    0% { background-position: 0 0; }
+    100% { background-position: 100% 0; }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    section p {
+        font-size: 0.9rem;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    form button {
+        padding: 8px 16px;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+}   
+
+section {
+    padding-top: 100px; 
+}
+
+#services {
+    background: #2d00a0;
+    padding: 60px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+#services h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 2.5em;
+    color: #1a1a1a;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #0078b8;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.service {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+    font-size: 2.5em;
+    color: #00abb4;
+    margin-right: 20px;
+}
+
+.service h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.learn-more {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #034e7773;
+    text-decoration: none;
+    border: 1px solid #005376;
+    border-radius: 5px;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.learn-more:hover {
+    background-color: #006a7c;
+    color: #fff;
+}
